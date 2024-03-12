@@ -27,17 +27,8 @@ function createMenuHtml() {
     
   });
 
-
-  // newParagraph.id = "text-about";
-
-  // newParagraph.textContent = `Our Chef is from Italy. He knows how to make it. Trust me !
-  // You can choose whatever you want
-  // Every Pizza is delicious and exceptional because Pizza is our life`
-
   divDescription.appendChild(newList);
   content.appendChild(divDescription);
-
-  // content.appendChild(divDescription)
 
 }
 
