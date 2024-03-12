@@ -9,6 +9,7 @@ module.exports = {
 
   devServer: {
     watchFiles: ['./src/index.html'],
+    static: './dist',
   },
   // devServer: {
   //   contentBase: path.join(__dirname, 'dist'),
