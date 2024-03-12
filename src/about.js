@@ -3,7 +3,7 @@ function createAboutHtml() {
   const content = document.getElementById("content");
 
   const newHead1 = document.createElement("h1");
-  newHead1.textContent = "Italian Restaurant";
+  newHead1.textContent = "About";
 
   content.appendChild(newHead1);
 
