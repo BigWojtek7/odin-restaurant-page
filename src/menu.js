@@ -8,7 +8,7 @@ function createMenuHtml() {
   content.appendChild(newHead1);
 
   const newHead2 = document.createElement("h2");
-  newHead2.textContent = "We are specialize at making Pizzas";
+  newHead2.textContent = "Just try our best Pizzas's compositions:";
 
   content.appendChild(newHead2);
 
@@ -16,17 +16,28 @@ function createMenuHtml() {
 
   divDescription.id = "description";
 
-  const newParagraph = document.createElement("p");
-  newParagraph.id = "text-about";
+  const newList = document.createElement("ul");
 
-  newParagraph.textContent = `Our Chef is from Italy. He knows how to make it. Trust me !
-  You can choose whatever you want
-  Every Pizza is delicious and exceptional because Pizza is our life`
+  const myList = ["Margarita", "Prosciutto", "Pepperoni", "Hawaiian", "Supreme"]
 
-  divDescription.appendChild(newParagraph);
+  myList.forEach(element => {
+    let li = document.createElement("li")
+    li.innerHTML = element;
+    newList.appendChild(li)
+    
+  });
+
+
+  // newParagraph.id = "text-about";
+
+  // newParagraph.textContent = `Our Chef is from Italy. He knows how to make it. Trust me !
+  // You can choose whatever you want
+  // Every Pizza is delicious and exceptional because Pizza is our life`
+
+  divDescription.appendChild(newList);
   content.appendChild(divDescription);
 
-  content.appendChild(divDescription)
+  // content.appendChild(divDescription)
 
 }
 
